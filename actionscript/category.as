@@ -2,6 +2,7 @@ package org.unicode.utils
 {
     import flash.utils.ByteArray
     import flash.utils.Endian
+    import org.hydroper.utils.CharCodeUtils
 
     public final class UnicodeCategory
     {
@@ -61,7 +62,7 @@ package org.unicode.utils
 
         static public function fromString(s:String):uint
         {
-            return fromCharCode(UnicodeSurrogate.charCodeAt(s, 0))
+            return fromCharCode(CharCodeUtils.charCodeAt(s, 0))
         }
 
         static public function fromCharCode(cp:uint):uint

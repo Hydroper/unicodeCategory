@@ -1,2 +1,2 @@
 node ../octetStreamGenerator/entry
-acompc -o=output/unicodeCategory.swc --library-path=library --include-sources=.
+acompc -o=output/UnicodeCategory.swc --library-path=lib --include-sources=.
